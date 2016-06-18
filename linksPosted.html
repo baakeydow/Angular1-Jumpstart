@@ -1,0 +1,34 @@
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="page-header">
+				<h1>JumpStart App</h1>
+			</div>
+			<div ng-repeat="data in linksData | orderBy:'-upvotes'">
+				<span class="glyphicon glyphicon-thumbs-up col-sm-2" ng-click="incrementUpvotes(data)"></span>
+				<span ng-show="data.upvotes == 0" class="col-sm-1">
+					*
+				</span>
+				<span ng-hide="data.upvotes == 0" class="col-sm-1">
+					{{data.upvotes}}
+				</span>
+				<span style="font-size:20px; margin-left:10px;">
+					<a ng-show="data.link" href="{{data.link}}">
+						{{data.title}}
+					</a>
+					<span ng-hide="data.link">
+						{{data.title}}
+					</span>
+				</span>
+			</div>
+			<form ng-submit="addLink()" style="margin-top:30px;">
+				<h3>Add a New Link</h3>
+				<div class="form-group" style="margin-top:30px;">
+				<input class="form-control" type="text" placeholder="Title" ng-model="title"></input>
+				</div>
+				<div class="form-group">
+				<input class="form-control" type="text" placeholder="Link" ng-model="link"></input>
+				</div>
+				<button type="submit" class="btn btn-primary">Post</button>
+			</form>
+		</div>
+	</div>
