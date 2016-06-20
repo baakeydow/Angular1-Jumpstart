@@ -3,7 +3,7 @@ var app = angular.module('LinksNews', ['ngRoute'])
 app.config(function($routeProvider){
   $routeProvider.when('/', {
     controller: 'PageCtrl',
-    templateUrl: 'linksPosted.html'
+    templateUrl: 'html/linksPosted.html'
   })
   .otherwise('/');
 })
@@ -35,5 +35,5 @@ app.controller('PageCtrl', ['$scope', 'postedLinks',
 }]);
 
 app.run(function ($templateCache){
- $templateCache.put('linksPosted.html');
+ $templateCache.put('html/linksPosted.html');
 });

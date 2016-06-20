@@ -5,6 +5,6 @@ var fs = require('fs');
 
 var app = express();
 
-app.use(express.static(path.join(__dirname, '/')));
+app.use(express.static(path.join(__dirname, '/public')));
 // Create an HTTP service.
 http.createServer(app).listen(8000);
