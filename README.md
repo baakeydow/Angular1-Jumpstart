@@ -12,14 +12,14 @@ npm
 
 ### Getting Started
 
-Step 1 : ``` 	git clone https://github.com/bndao/Angular1-Jumpstart.git
+Step 1 : ``` 	git clone https://github.com/bndao/Angular1-Jumpstart.git ```
 
-				cd Angular1-Jumpstart```
+		 ``` 	cd Angular1-Jumpstart ```
 
-Step 2 : ``` 	npm install
+Step 2 : ``` 	npm install```
 
-				touch users.htpasswd
+		``` 	touch users.htpasswd```
 
-				htpasswd -db /path/to/Angular1-Jumpstart/users.htpasswd username passwd```
+		``` 	htpasswd -db /path/to/Angular1-Jumpstart/users.htpasswd username passwd```
 
 Step 3 : ``` 	npm start```
